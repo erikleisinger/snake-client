@@ -10,11 +10,12 @@ const connect = function() {
   // interpret incoming data as text
   conn.setEncoding('utf-8');
 
+ 
+
   //upon connection to the server, we're notified of successful connection
   conn.on('connect', () => {
     console.log('You have connected to the server');
     conn.write('Name: EL');
-
   });
 
   // when we receive data from the server, we log that to the console.
